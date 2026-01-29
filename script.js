@@ -10,8 +10,8 @@ const lines = [
   "We may fight, we may get angry 😌",
   "But I choose you. Always 💋",
   "Ee Valentine mattu ellaa dina… with you 💖"
-  always loving u ma 💗 🫂 🫶🏼 😘 ];
-
+  always loving u ma 💗 🫂 🫶🏼 😘
+  ];
 let i = 0, j = 0;
 
 // Typing effect
