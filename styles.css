@@ -11,6 +11,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .container {
@@ -20,6 +22,8 @@ body {
   max-width: 420px;
   text-align: center;
   border-radius: 25px;
+  position: relative;
+  z-index: 2;
 }
 
 h1 {
@@ -27,6 +31,48 @@ h1 {
   color: #ff4d6d;
 }
 
+.name {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.message {
+  margin: 15px 0;
+  min-height: 50px;
+}
+
 .hidden {
   display: none;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 5px;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* Hearts animation */
+.heart {
+  position: absolute;
+  color: red;
+  font-size: 20px;
+  animation: floatUp 3s linear forwards;
+  z-index: 1;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateY(-600px) scale(1.5); opacity: 0; }
 }
