@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+h1 {
+  font-family: Pacifico, cursive;
+  color: #ff4d6d;
+}
+
+.hidden {
+  display: none;
+}
